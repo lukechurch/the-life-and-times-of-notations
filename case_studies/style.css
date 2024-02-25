@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 main {
   font-family: Arial, Helvetica, sans-serif;
   color: #334155;
@@ -6,9 +9,22 @@ main {
   line-height: 1.4;
 }
 
+@media (width < 1060px) {
+  main {
+    width: unset;
+    margin: 0 30px;
+  }
+}
+
 .pages {
   display: flex;
   gap: 32px;
+}
+
+@media (width < 500px) {
+  .pages {
+    display: block;
+  }
 }
 
 .column {
